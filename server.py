@@ -13,9 +13,9 @@ def predict_request():
     # Send prediction request
     resp = predict_class(image)
     return jsonify({
-        "class":resp[0],
-        "probability" : resp[1],
-        "scores" : resp[2]
+        "class_name":resp[0],
+        # "probability" : resp[1],
+        # "scores" : resp[2]
     })
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
