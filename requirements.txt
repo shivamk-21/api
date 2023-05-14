@@ -1,0 +1,7 @@
+Flask==2.2.3
+numpy==1.21.6
+tensorflow==2.11.0
+tensorflow_intel
+Werkzeug==2.2.3
+gunicorn==19.9.0
+Pillow
