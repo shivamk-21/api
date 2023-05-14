@@ -10,8 +10,9 @@ def index():
 def predict_request():
     # Get file and save it
     image = request.get_json()['image']
+    plant = request.get_json()['plant']
     # Send prediction request
-    resp = predict_class(image)
+    resp = predict_class(image,plant)
     return jsonify({
         "class_name":resp[0],
         # "probability" : resp[1],
