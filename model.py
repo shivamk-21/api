@@ -3,7 +3,10 @@ from tensorflow import lite,nn
 from PIL import Image
 from io import BytesIO
 import base64
-class_names=['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy', 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot', 'Corn_(maize)___Common_rust_', 'Corn_(maize)___Northern_Leaf_Blight', 'Corn_(maize)___healthy', 'Grape___Black_rot', 'Grape___Esca_(Black_Measles)', 'Grape___healthy', 'Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy', 'Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
+class_names=['Apple_scab', 'Black_rot', 'Cedar_apple_rust', 'healthy', 'leaf_spot', 'Common_rust_', 
+             'Northern_Leaf_Blight', 'healthy', 'Black_rot', 'Esca_(Black_Measles)', 'healthy', 'Early_blight', 'Late_blight', 'healthy',
+             'Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mite', 
+             'Target_Spot', 'Yellow_Leaf_Curl_Virus', 'Mosaic_virus', 'healthy']
 
 # Load TFLite model on import and allocate tensors.
 def load ():
