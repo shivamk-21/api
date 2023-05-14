@@ -8,7 +8,7 @@ class_names=['Apple_scab', 'Black_rot', 'Cedar_apple_rust', 'healthy', 'leaf_spo
              'Northern_Leaf_Blight', 'healthy', 'Black_rot', 'Esca_(Black_Measles)', 'healthy', 'Early_blight', 'Late_blight', 'healthy',
              'Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mite', 
              'Target_Spot', 'Yellow_Leaf_Curl_Virus', 'Mosaic_virus', 'healthy']
-classes={"apple":0,"corn":4,"grape":8,"potato":11,"tomato":14}
+classes={"apple":0,"corn":4,"grape":8,"potato":11,"tomato":14,"Select a crop":0}
 # Load TFLite model on import and allocate tensors.
 def load (plant):
     interpreter = lite.Interpreter(model_path=plant+".tflite")
