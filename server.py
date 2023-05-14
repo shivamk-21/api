@@ -9,7 +9,7 @@ def index():
 @app.route('/predict', methods=['POST'])
 def predict_request():
     # Get file and save it
-    image = request.get(request.json['image'])
+    image = request.get(request.get_json['image'])
     # Send prediction request
     resp = predict_class(image)
     return jsonify({
